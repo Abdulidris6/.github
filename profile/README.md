@@ -13,9 +13,9 @@ Susu Protocol keeps the instrument and removes the holder. The pool lives in a S
 that releases it only to the recipient the schedule names. No operator, no admin key with a
 withdrawal function, nothing to run away with.
 
-> **Testnet beta. Unaudited. Not mainnet-ready.** The contract is deployed to Stellar Testnet,
-> where the balances are worthless. The Mainnet readiness gate currently returns `NO-GO`, by
-> design, and will keep doing so until an independent review has been commissioned.
+> **Testnet. Reviewed by the maintainer, not independently audited.** The contract is deployed to
+> Stellar Testnet, where the balances are worthless. Mainnet readiness is implemented and
+> mechanically verified; the deployment gate is `NO-GO` until the attestations are satisfied.
 
 ---
 
@@ -94,9 +94,9 @@ can be replaced, rewritten, or switched off without affecting a balance.
 
 ## Security posture
 
-This project is **unaudited**, and the README of every repository says so first. What a reviewer
-would need — scope, assets, trust boundaries, and the weaknesses we already know about — is
-written down in [`docs/AUDIT_SCOPE.md`](https://github.com/susu-labs/susu-contracts/blob/main/docs/AUDIT_SCOPE.md)
+The maintainer has reviewed this code; it has **not been independently audited**, and the README of
+every repository says so first. What a reviewer would need — scope, assets, trust boundaries, and
+the weaknesses we already know about — is written down in [`docs/AUDIT_SCOPE.md`](https://github.com/susu-labs/susu-contracts/blob/main/docs/AUDIT_SCOPE.md)
 rather than discovered. The code under review is frozen at the annotated `audit-freeze-1` tag.
 
 Two rules we will not bend:
